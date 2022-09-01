@@ -1,0 +1,275 @@
+/* Hoja de estilos css  */
+
+/* Variables  */
+:root {
+
+    --fuenteheading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #784d3c;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --gris: #1f1f1f;
+
+
+}
+
+html {
+    /*que el padding no afecte el ancho de los elementos*/
+    box-sizing: border-box;
+    /*Nos da la equivalencia de los rem (1rem = 10px)*/
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+/* Config globales: Agregar clases con anchos tamaños y objetos predefinidos */
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--fuenteheading);
+    line-height: 2.3rem;
+}
+
+h1 {
+    font-size: 4.8rem
+}
+
+h2 {
+    font-size: 4rem
+}
+
+h3 {
+    font-size: 3.2rem
+}
+
+h4 {
+    font-size: 2.6rem
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+/* Utilidades */
+.nomargin {
+    margin: 0;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.centrartexto {
+    text-align: center;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+
+.light {
+    font-weight: 400;
+}
+
+/* Seccion Principal  */
+/* Encabezado  */
+
+.header {
+    background-image: url('../blogdecafe_inicio/img/banner.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50rem;
+    background-position: center center;
+}
+
+.barra__texto {
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 7rem;
+}
+
+@media (min-width:768px) {
+    .barra__texto {
+        margin-top: 14rem;
+    }
+}
+
+
+.barra {
+    color: var(--blanco);
+    padding-top: 4rem;
+}
+
+/* desde 768 para arriba APLICA ESTO  */
+@media (min-width:768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+
+
+.barra__titulo {
+    margin: 0;
+    padding: 0;
+}
+
+.barra__titulo__nombre {
+    font-weight: 400;
+    color: var(--blanco);
+}
+
+.barra__titulo__bold {
+    font-weight: 700;
+    color: var(--blanco);
+}
+
+.navegacion {
+    color: var(--blanco);
+
+}
+
+@media (min-width:768px) {
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.navegacion__link {
+    color: var(--blanco);
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+
+
+/* Contenido principal del blog  */
+
+@media (min-width:768px) {
+    .contenidoprincipal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 3rem;
+    }
+}
+
+/* Linea sde separacion  */
+.entrada {
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--gris);
+    margin-bottom: 3rem;
+}
+
+.entrada:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+.botonnegro {
+    display: block;
+    background-color: var(--negro);
+    font-family: var(--fuenteheading);
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem 3rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+@media (min-width:768px) {
+    .botonnegro {
+        display: inline-block;
+    }
+}
+
+.botoncafe {
+    display: block;
+    background-color: var(--primario);
+    font-family: var(--fuenteheading);
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+
+@media (min-width:768px) {
+    .botoncafe {
+        display: inline-block;
+    }
+}
+
+
+.curso {
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--gris);
+    margin-bottom: 3rem;
+}
+
+.curso:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+
+.footer {
+    background-color: var(--negro);
+
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+
+
+
+/* PAGINA NOSOTROS  */
+
+.titulonosotros {text-align: center;}
+
+@media (min-width:768PX) {
+    .contenidonosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+    
+    }}
