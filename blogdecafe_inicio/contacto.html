@@ -58,42 +58,56 @@
 
         <div class="contenedor">
 
-            <h2 class="titulonosotros">Sobre Nosotros</h2>
+            <h2 class="centrartexto">Contáctanos</h2>
 
-            <div class="contenidonosotros">
+            <div class="contacto__fondo"> </div>
 
-                <div class="contenidonosotros_img">
-                    <img src="/blogdecafe_inicio/img/nosotros.jpg" alt="imagennosotros">
+
+            <FOrm class="formulario">
+                <!-- definimos action para indicar hacia donde se envian los datos -->
+
+                <div class="formulario__campo">
+                    <!-- for & ID en los labels sn ayudas para accesibilidad de personas con discapacidad  -->
+                    <label class="formulario__campo__label">Nombre:</label>
+                    <input type="text" placeholder="Tu nombre" class="formulario__campo__field">
                 </div>
 
-                <div class="contenidonosotros__texto">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti saepe nulla cupiditate soluta
-                        molestias perferendis. Perferendis reiciendis illo laboriosam dolore, provident, quae iusto rem
-                        itaque fugiat nisi voluptates, aperiam esse.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti saepe nulla cupiditate soluta
-                        molestias perferendis. Perferendis reiciendis illo laboriosam dolore, provident, quae iusto rem
-                        itaque fugiat nisi voluptates, aperiam esse.</p>
+                <div class="formulario__campo">
+                    <label class="formulario__campo__label">Correo:</label>
+                    <input type="email" placeholder="Correo Electronico" class="formulario__campo__field">
+                </div>
 
+                <div class="formulario__campo">
+                    <label class="formulario__campo__label">Numero Celular:</label>
+                    <input type="tel" placeholder=" ex 3102223344" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" maxlength="10"
+                        minlength="10" class="formulario__campo__field">
+                </div>
 
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti saepe nulla cupiditate soluta
-                        molestias perferendis. Perferendis reiciendis illo laboriosam dolore, provident, quae iusto rem
-                        itaque fugiat nisi voluptates, aperiam esse.
-                    </p>
+                <div class="formulario__campo">
+                    <label>Como te enteraste del blog?</label><br>
+                    <input type="radio" class="radio">
+                    <label class="formulario__campo__label">Amigos</label><br>
+                    <input type="radio" class="radio">
+                    <label class="formulario__campo__label">Redes Sociales</label><br>
                 </div>
 
 
+                <div class="formulario__campo">
+                    <label class="formulario__campo__label">Mensaje:</label>
+                    <textarea placeholder="Dejanos tu inquietud" name="" id="" cols="45" rows="5"
+                        class="formulario__campo__field"></textarea>
+                </div>
 
-            </div>
+                <!-- BOTON de enviar-->
+                <input type="submit" value="Enviar" class="botonnegro">
 
+            </FOrm>
 
-        </div>
 
     </main>
 
 
-
-
-
+    <!--Footer -->
     <footer class="footer">
 
         <div class="contenedor">
@@ -117,8 +131,6 @@
 
     </footer>
 
-
 </body>
-
 
 </html>

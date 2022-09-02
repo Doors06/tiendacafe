@@ -97,6 +97,10 @@ img {
     font-weight: 400;
 }
 
+.centrartexto {
+    text-align: center;
+}
+
 /* Seccion Principal  */
 /* Encabezado  */
 
@@ -229,8 +233,14 @@ img {
     padding: 1rem 3rem;
     margin-bottom: 2rem;
     border-radius: 5px;
+    transition: background-color .6s ease-out;
 }
 
+/* transicion e color en boton  */
+.botoncafe:hover {
+    background-color: darkgoldenrod;
+    cursor: pointer;
+}
 
 @media (min-width:768px) {
     .botoncafe {
@@ -264,12 +274,94 @@ img {
 
 /* PAGINA NOSOTROS  */
 
-.titulonosotros {text-align: center;}
+.titulonosotros {
+    text-align: center;
+}
 
 @media (min-width:768PX) {
     .contenidonosotros {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 3rem;
-    
-    }}
+
+    }
+}
+
+
+
+/* PAGINA CURSOS  */
+
+.curso__contenido {
+    line-height: 3.5rem;
+}
+
+.contenidocursos {
+    margin-top: 4rem;
+}
+
+@media (min-width:768px) {
+    .pagecurso {
+        display: grid;
+        grid-template-columns: 1FR 2FR;
+        column-gap: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .pagecurso:last-of-type {
+        padding-bottom: 0;
+    }
+}
+
+
+/* PAGINA CURSOS  */
+
+.entradablog {
+    padding-top: 1.5rem;
+}
+
+.entradablog__texto {
+    padding-top: 2rem;
+    line-height: 2.5rem;
+}
+
+
+
+/* PAGINA CONTACTO  */
+
+.contacto__fondo {
+    background-image: url('../blogdecafe_inicio/img/blog3.webp');
+    height: 40rem;
+    background-size: cover;
+}
+
+
+.formulario {
+    background-color: var(--blanco);
+    margin: -20rem auto 0 auto;
+    width: 90%;
+    padding: 5rem;
+    border-color: var(--primario);
+    border-width: 2px;
+    border-style: dotted;
+}
+
+.formulario__campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.formulario__campo__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.formulario__campo__field {
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+
+.radio {
+    flex: 0.1;
+    margin-left: 2rem;
+}
